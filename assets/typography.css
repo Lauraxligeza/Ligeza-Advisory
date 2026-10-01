@@ -1,0 +1,137 @@
+:root {
+  --font-sans: 'Inter', Arial, sans-serif;
+  --type-xs: .75rem;
+  --type-sm: .875rem;
+  --type-base: 1rem;
+  --type-lead: clamp(1rem, .95rem + .4vw, 1.125rem);
+  --type-card: clamp(1.125rem, 1.05rem + .3vw, 1.25rem);
+  --type-h2: clamp(1.75rem, 1.4rem + 1.4vw, 2.4rem);
+  --type-h1: clamp(2.25rem, 1.65rem + 2.4vw, 3.75rem);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--type-base);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.hero h1,
+.home .hero h1,
+.page-hero h1,
+.page-hero--editorial h1,
+.contact-intro h1,
+.post-header h1 {
+  font-size: var(--type-h1);
+  line-height: 1.12;
+  letter-spacing: -.04em;
+}
+
+.section h2,
+.home main > .section h2,
+.post-body h2 {
+  font-size: var(--type-h2);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+
+.section h3,
+.home main > .section h3,
+.stage-overview article h3,
+.process-steps h3 {
+  font-size: var(--type-card);
+  line-height: 1.35;
+  letter-spacing: -.015em;
+}
+
+.lede,
+.hero-copy .lede,
+.home .hero-copy .lede,
+.page-hero--editorial .lede,
+.contact-intro .lede {
+  font-size: var(--type-lead);
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.editorial-copy,
+.analysis-grid article p,
+.stage-overview article p,
+.process-steps p,
+.audience-card p,
+.service-stage .plain-list,
+.post-body {
+  font-size: var(--type-base);
+  line-height: 1.75;
+}
+
+.eyebrow,
+.hero-outline-label,
+.blog-meta,
+.footer-bottom {
+  font-size: var(--type-xs);
+  line-height: 1.6;
+}
+
+.eyebrow,
+.hero-outline-label {
+  font-weight: 600;
+  letter-spacing: .12em;
+}
+
+.hero-outline h2,
+.enquiry-context .steps h3,
+.enquiry-direct h3 {
+  font-size: var(--type-base);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -.01em;
+}
+
+.hero-outline li p,
+.service-stage .split > div:last-child > p,
+.form-intro,
+.footer-email,
+.stage-navigation a {
+  font-size: var(--type-sm);
+  line-height: 1.65;
+}
+
+.btn-primary,
+.btn-secondary,
+.nav-links .btn-nav {
+  font-size: var(--type-sm);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.nav-links > a:not(.btn-nav) {
+  font-size: var(--type-sm);
+  font-weight: 500;
+}
+
+.price {
+  font-size: var(--type-card);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+}
+
+@media (max-width: 1100px) {
+  .nav-links > a:not(.btn-nav) {
+    font-size: var(--type-base);
+  }
+}
